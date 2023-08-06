@@ -1,0 +1,331 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* -------------------------Global--------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Lugrasimo", cursive;
+}
+h4 {
+  margin: 0px;
+}
+ul {
+  padding: 10px;
+}
+/* -------------------------Header-------------------------------- */
+header {
+  width: 100%;
+  background-color: #fff9e1;
+  position: fixed;
+  top: 0;
+  height: 120px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+header img:hover {
+  transition: 0.3s;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: #4c5760;
+}
+.Top-button {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: black;
+  align-items: center;
+}
+.Top-button a {
+  color: #272726;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+  margin: 6px 0 6px 0;
+  border-radius: 5px;
+}
+.Top-button a:hover {
+  transition: 0.4s;
+  padding: 15px;
+  border-radius: 20px;
+  background: #4c5760;
+  color: white;
+}
+header hr {
+  height: 3px;
+  background-color: #4c5760;
+  margin: 0px;
+}
+
+/* -----------------------Introduction----------------------------- */
+.Introduction {
+  width: 100%;
+  font-size: 35px;
+  background: linear-gradient(rgba(48, 48, 54, 0.8), rgba(48, 48, 54, 0.8)),
+    url(../images/introuduction_background.jpg);
+  text-align: center;
+  margin: 120px 0px 0px 0px;
+  height: 500px;
+  background-size: cover;
+  color: white;
+}
+.Introduction h1 {
+  margin-top: 0px;
+}
+h2 {
+  margin-left: 20px;
+  display: inline-block;
+  border-bottom: 5px solid red;
+}
+/*--------------------------Top Picks---------------------------- */
+.topPicks {
+  width: 100%;
+}
+.Line-break {
+  width: 10%;
+  color: #e4000d;
+}
+#top-picks {
+  text-align: center;
+}
+
+.top-picks-menu {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1f;
+  column-gap: 5px;
+  overflow-x: scroll;
+  text-align: center;
+  font-size: larger;
+}
+
+.top-picks-menu img {
+  width: 300px;
+  height: 350px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/*--------------------------Main Menu ---------------------------- */
+.mainMenu {
+  color: black;
+  text-decoration: none;
+}
+
+/* Navbar container */
+.navbar {
+  font-family: "Pangolin", cursive;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  transition: 0.3s;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #fff9e1;
+  color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+  background: #4c5760;
+  padding: 16px;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  -webkit-animation: slide-down 1s ease-out;
+  -moz-animation: slide-down 1s ease-out;
+}
+.test {
+  text-align: center;
+  background-color: #fff9e1;
+  height: 450px;
+  font-family: "Berkshire Swash", cursive;
+}
+.test h1 {
+  font-size: 100px;
+  margin: 0px;
+  padding-top: 125px;
+}
+
+@-webkit-keyfrwhaames slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  font-size: 22px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #fff9e1;
+  height: 350px;
+  text-align: center;
+}
+.column h3 {
+  margin: 10px;
+}
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  display: block;
+}
+.column a:hover {
+  transition: 0.4s;
+  border-radius: 200px;
+  background: #4c5760;
+  color: white;
+}
+.column p {
+  margin: 0px;
+  padding: 14px;
+  display: block;
+}
+.column ul li img {
+  width: 40px;
+}
+.column ul li img:hover {
+  transition: 0.2s;
+  padding: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---------------------------Contact and Social--------- */
+.Contacts-Quicklinks {
+  width: 100%;
+  color: whitesmoke;
+  background-color: #323232;
+  height: 500px;
+  font-weight: bold;
+}
+
+.Contacts-Quicklinks h1 {
+  margin-top: 0px;
+  padding: 6px 0 0 12px;
+  font-size: 35px;
+}
+.Contacts-Quicklinks h4 {
+  width: 250px;
+  padding: 6px 0 0 12px;
+  font-size: 18px;
+  text-align: left;
+}
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+.The-end {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  height: 80px;
+  background-color: #111111;
+  color: white;
+}
+
+.The-end h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  padding-top: 20px;
+}
+.logo {
+  margin-top: -10px;
+  margin-left: 15px;
+  width: 150px;
+  height: 150px;
+}
+.socials {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
